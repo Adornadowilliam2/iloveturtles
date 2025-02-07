@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", serif;
+}
+
+
+li:hover{
+    cursor: pointer;
+}
