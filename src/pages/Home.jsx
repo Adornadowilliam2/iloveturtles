@@ -30,6 +30,13 @@ export default function Home() {
       image:"https://cdn.blerp.com/thumbnails/0f068030-bccb-11ec-b6a7-9ded42fdfaf9",
       alt:"Turtle panting",
       link:'https://youtu.be/3yMIk9u--lo?si=xVInTJRHphFea-ih'
+    },
+    {
+      id:5,
+      name:"Ninja turtle",
+      image:"https://i.ytimg.com/vi/uU_2Dq33cmc/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAAlAADIQj0AgKJD8AEB-AG2CIACgA-KAgwIABABGGUgWChWMA8=&rs=AOn4CLDs_oLcoz21Lnv6VE_y9jZXSXv1FQ",
+      alt:"creating a ninja turtle",
+      link:"https://www.youtube.com/shorts/uU_2Dq33cmc"
     }
   ]
 
