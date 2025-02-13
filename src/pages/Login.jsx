@@ -30,8 +30,9 @@ export default function Login() {
               className="border border-black p-2 w-[100%]"
             />
           </div>
+
           <div className="mt-2">
-            <label htmlFor="username" className="block">
+            <label htmlFor="password" className="block">
               Password:
             </label>
             <input
@@ -47,7 +48,7 @@ export default function Login() {
           <div className="text-[12px] text-center mt-2">
             <a href="">
               Already has an account?{" "}
-              <span className="text-[#007bff]">Register</span>
+              <span className="text-[#007bff]" onClick={()=>navigate("/register")}>Register</span>
             </a>
           </div>
         </div>

@@ -23,6 +23,13 @@ export default function Home() {
       image:"https://th.bing.com/th/id/OIP.Zrw0aKBNu-IdozTfmkA8HQAAAA?w=360&h=360&rs=1&pid=ImgDetMain",
       alt:"huh turtle",
       link:"https://www.youtube.com/watch?v=Yx6s8bg3mk4"
+    },
+    {
+      id:4,
+      name:"Tutle panting",
+      image:"https://cdn.blerp.com/thumbnails/0f068030-bccb-11ec-b6a7-9ded42fdfaf9",
+      alt:"Turtle panting",
+      link:'https://youtu.be/3yMIk9u--lo?si=xVInTJRHphFea-ih'
     }
   ]
 
