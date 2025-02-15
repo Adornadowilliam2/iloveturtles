@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Home() {
-
+  const navigate = useNavigate();
   const data = [
     {
       id:1,
@@ -43,10 +44,10 @@ export default function Home() {
   
   return (
     <div>
-      <nav className="p-2 text-white bg-gray-700 flex items-center justify-between">
+      <nav className="p-2 text-white bg-gray-700 flex items-center justify-between font-bold">
         <div>Turtles</div>
         <ul className="flex gap-4">
-          <li>Home</li>
+          <li><Link onClick={()=>navigate("/")}>Login</Link></li>
           <li>About</li>
           <li>Contact</li>
         </ul>
@@ -69,7 +70,7 @@ export default function Home() {
             click here for video{" "}
             <a
               href={item.link}
-              className="text-[#007bff] border-none"
+              className="text-[#007bff] border-none w-64 break-all"
             >
               {item.link}
             </a>
