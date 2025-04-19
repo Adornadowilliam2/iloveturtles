@@ -47,7 +47,7 @@ export default function Home() {
       <nav className="p-2 text-white bg-gray-700 flex items-center justify-between font-bold">
         <div>Turtles</div>
         <ul className="flex gap-4">
-          <li><Link onClick={()=>navigate("/")}>Login</Link></li>
+          <li><Link onClick={()=>navigate("/login")}>Login</Link></li>
           <li>About</li>
           <li>Contact</li>
         </ul>
@@ -59,10 +59,11 @@ export default function Home() {
       </main>
       <section className="flex flex-wrap items-stretch bg-gray-600">
         {data.map((item)=>(
-          <div className="w-[200px] block m-auto mt-2 border border-black p-4 bg-[aliceblue]  hover:bg-[#ccc]" key={item.id}>
+          <div className="w-[200px] block m-auto mt-2 rounded-lg border border-black p-4 bg-[aliceblue]  hover:bg-[#ccc]" key={item.id}>
           <img
             src={item.image}
             alt={item.alt}
+            className='mb-2'
           />
           <h2 className="uppercase font-bold">{item.name}</h2>
           <h3 className="text-[14px]">meme video</h3>

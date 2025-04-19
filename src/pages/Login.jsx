@@ -8,7 +8,7 @@ export default function Login() {
       <div className="border border-black p-4 rounded-lg flex items-center justify-evenly gap-1 relative">
         <span
           className="absolute top-0 right-0 m-1 border border-[#ccc] p-1 rounded-lg hover:cursor-pointer"
-          onClick={() => navigate("/home")}
+          onClick={() => navigate("/")}
         >
           X
         </span>

@@ -9,11 +9,11 @@ import Register from './pages/Register';
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/login",
       element: <Login />
     },
     {
-      path: '/home',
+      path: '/',
       element: <Home />
     },
     {
