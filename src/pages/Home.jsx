@@ -6,7 +6,7 @@ export default function Home() {
   const data = [
     {
       id: 1,
-      name: "i like turtle",
+      name: "i like turtles",
       image: "https://th.bing.com/th/id/OIP.0-Wdcy2haE6rQMSRS5xq9gHaHa?rs=1&pid=ImgDetMain",
       alt: "i like turtle meme image",
       link: "https://youtu.be/KWotO76SuXE"
@@ -50,35 +50,34 @@ export default function Home() {
 
 
   return (
-    <div>
-      <nav className="p-5 text-white bg-gray-700 flex items-center justify-between font-bold">
-        <div>Turtles</div>
+    <div className='bg-gray-600'>
+      <nav className="p-5 text-white bg-gray-700 flex items-center justify-between font-bold font-sans">
+        <div className='text-4xl'>🐢 Turtles</div>
         <ul className="flex gap-4">
-          <li><Link onClick={() => navigate("/login")}>Login</Link></li>
-          <li>About</li>
-          <li>Contact</li>
+          <li className='border-dashed border-2 border-white p-2 rounded-md '><Link onClick={() => navigate("/login")}>Login</Link></li>
+          <li className='border-dashed border-2 border-white p-2 rounded-md '>About</li>
+          <li className='border-dashed border-2 border-white p-2 rounded-md '>Contact</li>
         </ul>
       </nav>
-      <main className='bg-[url("https://www.fisheries.noaa.gov/s3//styles/full_width/s3/dam-migration/hawksbill_sea_turtle.jpg?itok=cxzcge8K")] h-[80vh] bg-no-repeat bg-center bg-cover flex justify-center items-center'>
-        <h1 className="bg-[#f0eeeeb7] p-3 lg:text-[3rem] sm:text-[1rem]">
-          Love the Turtles
-        </h1>
-      </main>
-      <div>
-        <h2 className='bg-gray-600 p-2 text-white text-2xl'>For you</h2>
-        <section className="flex flex-wrap items-evenly justify-center bg-gray-600 ">
+      <main className='bg-[url("https://www.fisheries.noaa.gov/s3//styles/full_width/s3/dam-migration/hawksbill_sea_turtle.jpg?itok=cxzcge8K")] h-[80vh] bg-no-repeat bg-center bg-cover flex justify-center items-center w-5/6 m-auto mt-4'>
 
-          {data.map((item) => (
-            <div className="w-[200px] block m-auto mt-2 rounded-lg border border-black p-4 bg-[aliceblue]  hover:bg-[#ccc]" key={item.id}>
+      </main>
+      <div className='bg-gray-700 mt-20 w-5/6 m-auto rounded-lg p-4'>
+        <h2 className=' p-2 text-white text-2xl font-sans'>For you 😁👍</h2>
+        <section className="flex flex-wrap items-evenly justify-center font-sans">
+
+          {data.map((item, i) => (
+            <div className={`w-[200px] block m-auto mt-2 rounded-lg border border-black p-5 h-[320px] ${i % 2 === 0 ? 'bg-[aliceblue]' : 'bg-[#ccc]'}`} key={item.id}>
               <img
                 src={item.image}
                 alt={item.alt}
                 className='mb-2'
               />
               <h2 className="uppercase font-bold">{item.name}</h2>
-              <h3 className="text-[14px]">meme video</h3>
-              <h4 className="text-[12px]">
-                click here for video{" "}
+              <h3 className="text-[14px] bg-gray-500 text-white pl-2 rounded font-bold">😂 Meme Video</h3>
+              <h4 className="text-[12px] font-bold mt-2">
+                click here for video:{" "}
+                <br />
                 <a
                   href={item.link}
                   className="text-[#007bff] border-none w-64 break-all"
