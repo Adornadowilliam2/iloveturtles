@@ -59,7 +59,7 @@ export default function Home() {
           <li className='border-dashed border-2 border-white p-2 rounded-md '>Contact</li>
         </ul>
       </nav>
-      <main className='bg-[url("https://www.fisheries.noaa.gov/s3//styles/full_width/s3/dam-migration/hawksbill_sea_turtle.jpg?itok=cxzcge8K")] h-[80vh] bg-no-repeat bg-center bg-cover flex justify-center items-center w-5/6 m-auto mt-4'>
+      <main className='bg-[url("https://www.fisheries.noaa.gov/s3//styles/full_width/s3/dam-migration/hawksbill_sea_turtle.jpg?itok=cxzcge8K")] h-[80vh] bg-no-repeat bg-center bg-cover flex justify-center items-center w-5/6 m-auto mt-4  border-8 border-black border-double rounded-lg  '>
 
       </main>
       <div className='bg-gray-700 mt-20 w-5/6 m-auto rounded-lg p-4'>
@@ -71,7 +71,7 @@ export default function Home() {
               <img
                 src={item.image}
                 alt={item.alt}
-                className='mb-2'
+                className='mb-2 h-[150px] w-full object-cover rounded'
               />
               <h2 className="uppercase font-bold">{item.name}</h2>
               <h3 className="text-[14px] bg-gray-500 text-white pl-2 rounded font-bold">😂 Meme Video</h3>
